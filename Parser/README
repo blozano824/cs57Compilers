@@ -1,0 +1,3 @@
+To build this file, run `make`
+To test this parser with a valid minic program, run `make test1`
+To test this parser with an invalid minic program, run `make test2`
