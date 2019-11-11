@@ -1,3 +1,18 @@
-CS 57 Compilers
-Brayan Lozano
-Dartmouth College
+1. To compiler the optimizer code run:
+
+make
+
+2. To generate the LLVM_IR file that has to be passed as command line argument to optimizer run:
+
+make test
+
+3. To test optimizer and generate optimized LLVM_IR file run:
+
+make testoptimizer
+
+4. To test optimizer with custom test file and generate custom optimized LLVM_IR file run:
+
+clang -S -emit-llvm [custom_test_file].c -o [custom_test_file].ll
+./optimizer [custom_test_file].ll 2> optimized.ll
+
+Please ignore print statements in stdout. They are simply there for debugging purposes.
